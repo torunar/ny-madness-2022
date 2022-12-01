@@ -60,23 +60,142 @@
         .goat {
             display: var(--day-5);
             position: fixed;
-            width: 40vh;
+            width: 30vh;
             bottom: 5%;
             left: 50%;
-            margin-left: -20vh;
+            margin-left: -15vh;
         }
         .julmust {
             display: var(--day-6);
             position: fixed;
-            top: 10vh;
-            height: 20vh;
+            top: 12vh;
+            height: 18vh;
+            right: 12vw;
+            animation: rotation-ccw 2s infinite linear;
         }
         .fireworks {
-            display: var(--day-7);
+            display: var(--day-8);
             position: fixed;
             bottom: 30vh;
             width: 40vh;
             right: 0;
+        }
+        .lights {
+            display: var(--day-7);
+            position: fixed;
+            top: -10vh;
+            left: 50%;
+            width: 40vw;
+            margin-left: -20vw;
+        }
+	.presents {
+            display: var(--day-9);
+            position: fixed;
+            top: 27vh;
+            width: 10vw;
+            left: 50%;
+            margin-left: -1vw;
+        }
+        .cat {
+            display: var(--day-12);
+            position: fixed;
+            top: 45vh;
+            width: 15vw;
+            left: -1vw;
+        }
+        .lucia {
+            display: var(--day-13);
+            position: fixed;
+            width: 7vw;
+            top: 30vh;
+            left: 50%;
+            margin-left: -10vw;
+        }
+	.flag-se {
+            display: var(--day-14);
+            position: fixed;
+            top: 1vh;
+            width: 10vw;
+            left: 1vw;
+        }
+	.flag-dk {
+            display: var(--day-15);
+            position: fixed;
+            top: -5vh;
+            width: 10vw;
+            right: 0vw;
+        }
+        .pepe {
+            display: var(--day-16);
+            position: fixed;
+            bottom: 0;
+            right: 2vw;
+            width: 15vw;
+        }
+	.flag-no {
+            display: var(--day-19);
+            position: fixed;
+            top: -5vh;
+            width: 10vw;
+            left: 20vw;
+        }
+	.flag-fi {
+            display: var(--day-20);
+            position: fixed;
+            top: -5vh;
+            width: 10vw;
+            right: 20vw;
+        }
+        .glogg {
+            display: var(--day-21);
+            position: fixed;
+            top: 50vh;
+            height: 20vh;
+            left: 25vw;
+            animation: rotation-cw 2s infinite linear;
+        }
+        .sun {
+            display: var(--day-22);
+            position: fixed;
+            bottom: 2vh;
+            left: 1vw;
+            width: 12vw;
+        }
+        .yoda {
+            display: var(--day-23);
+            position: fixed;
+            top: 15vh;
+            left: 5vw;
+            width: 12vw;
+        }
+        .bongo {
+            display: var(--day-27);
+            position: fixed;
+            top: 50vh;
+            right: 45vh;
+            width: 10vw;
+        }
+        .bob {
+            display: var(--day-28);
+            position: fixed;
+            bottom: 2vh;
+            left: 15vw;
+            width: 25vw;
+        }
+        .fine {
+            display: var(--day-29);
+            position: fixed;
+            bottom: 0;
+            right: 20vw;
+            width: 25vw;
+        }
+	.santa {
+            display: var(--day-30);
+            position: fixed;
+            bottom: 1vh;
+            width: 25vw;
+            right: -25vw;
+            animation: slide 60s infinite linear;
         }
         .banana--left {
             left: 30vw;
@@ -91,14 +210,6 @@
         .banana--bottom-right {
             top: 20vh;
             right: 20vw;
-        }
-        .julmust--left {
-            left: 10vw;
-            animation: rotation-cw 2s infinite linear;
-        }
-        .julmust--right {
-            right: 10vw;
-            animation: rotation-ccw 2s infinite linear;
         }
         @keyframes rotation-cw {
             from {
@@ -116,44 +227,88 @@
                 transform: rotate(-359deg);
             }
         }
+        @keyframes slide {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+		transform: translate(-1000vw, 0);
+            }
+        }
     </style>
 </head>
 <body>
     <img src="https://i.imgur.com/J7gfA3f.png"
          class="goat"
-         alt="goat"
     />
     <img src="https://blogstats.files.wordpress.com/2012/10/dancing_banana21.gif"
          class="banana banana--left"
-         alt="banana"
     />
     <img src="https://blogstats.files.wordpress.com/2012/10/dancing_banana21.gif"
          class="banana banana--bottom-left"
-         alt="banana"
     />
     <img src="https://media.baamboozle.com/uploads/images/1000/1638879435_101968_gif-url.gif"
          class="tree"
-         alt="tree"
     >
     <img src="https://blogstats.files.wordpress.com/2012/10/dancing_banana21.gif"
          class="banana banana--right"
-         alt="banana"
      />
     <img src="https://blogstats.files.wordpress.com/2012/10/dancing_banana21.gif"
          class="banana banana--bottom-right"
-         alt="banana"
      />
     <img src="https://www.carlsbergsverige.se/media/26411/se_julmust-original.png"
-         class="julmust julmust--left"
-         alt="julmust"
-    />
-    <img src="https://www.carlsbergsverige.se/media/26411/se_julmust-original.png"
-         class="julmust julmust--right"
-         alt="julmust"
+         class="julmust"
     />
     <img src="https://crackersonlinechennai.com/wp-content/uploads/2020/08/rocket.gif"
          class="fireworks"
-         alt="fireworks"
+    />
+    <img src="https://i.gifer.com/origin/e1/e126a784ec82422a6faeb7c200a77121_w200.gif"
+         class="presents"
+    />
+    <img src="https://custom-doodle.com/wp-content/uploads/doodle/nyan-cat/nyan-cat.gif"
+         class="cat"
+    />
+    <img src="http://2.bp.blogspot.com/-ZtgkwomdCY4/ULYUl4lHv6I/AAAAAAAAEug/lKvFbPVp28U/s1600/lucia.gif"
+         class="lucia"
+    />
+    <img src="https://gunnardeckare.files.wordpress.com/2015/06/animated-flag-of-sweden.gif"
+         class="flag-se"
+    />
+    <img src="https://aktivskola.org/wp-content/uploads/sites/8/2019/06/danmark.gif"
+         class="flag-dk"
+    />
+    <img src="https://aktivskola.org/wp-content/uploads/sites/8/2019/06/norge.gif"
+         class="flag-no"
+    />
+    <img src="https://aktivskola.org/wp-content/uploads/sites/8/2019/06/finland.gif"
+         class="flag-fi"
+    />
+    <img src="https://res.cloudinary.com/anora/image/upload/t_ProductThumbnailImage-IN-SM,f_auto/inriver-prod%2Fblossa_glogg_alkoholfri_rod"
+         class="glogg"
+    />
+    <img src="http://pa1.narvii.com/6626/222cd21c6f88e4879d10bf962dda2c7bb8156c37_00.gif"
+         class="sun"
+    />
+    <img src="https://i.pinimg.com/originals/59/21/a2/5921a2d48c5bd58023e4432fbb85d88c.gif"
+         class="yoda"
+    />
+    <img src="https://custom-doodle.com/wp-content/uploads/doodle/bongo-cat-pixel/bongo-cat-pixel-doodle.gif"
+         class="bongo"
+    />
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8866375a-b85d-4429-ae79-0251ee20c28d/dbkzt72-5ac3fb79-0167-4921-8a2c-150d65e74066.png/v1/fill/w_1192,h_670,strp/this_is_fine_dog_by_markhoofman_dbkzt72-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4NjYzNzVhLWI4NWQtNDQyOS1hZTc5LTAyNTFlZTIwYzI4ZFwvZGJrenQ3Mi01YWMzZmI3OS0wMTY3LTQ5MjEtOGEyYy0xNTBkNjVlNzQwNjYucG5nIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC84ODY2Mzc1YS1iODVkLTQ0MjktYWU3OS0wMjUxZWUyMGMyOGRcL21hcmtob29mbWFuLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.FZ2y_1koirTYwpaoxWdg2lA7ZfaWjpL7WqfYkoF3CEg"
+         class="fine"
+    />
+    <img src="https://owonjk.stripocdn.email/content/guids/cab_pub_7cbbc409ec990f19c78c75bd1e06f215/images/38271542894454580.gif"
+         class="lights"
+    />
+    <img src="https://i.pinimg.com/originals/32/a6/eb/32a6ebf6c0546ba0fb0d232e3aba49e7.gif"
+         class="bob"
+    />
+    <img src="https://www.animatedimages.org/data/media/359/animated-santa-claus-image-0420.gif"
+         class="santa"
+    />
+    <img src="https://media.tenor.com/tthMwilLM8UAAAAi/pepe-meme.gif"
+         class="pepe"
     />
 </body>
 </html>
