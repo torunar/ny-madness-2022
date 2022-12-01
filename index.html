@@ -6,28 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>🔥🎄</title>
     <style>
+        :root {
+            --day-1: block;
+            --day-2: none;
+            --day-5: none;
+            --day-6: none;
+            --day-7: none;
+            --day-8: none;
+            --day-9: none;
+            --day-12: none;
+            --day-13: none;
+            --day-14: none;
+            --day-15: none;
+            --day-16: none;
+            --day-19: none;
+            --day-20: none;
+            --day-21: none;
+            --day-22: none;
+            --day-23: none;
+            --day-27: none;
+            --day-28: none;
+            --day-29: none;
+            --day-30: none;
+            --no-fire: none;
+            --fire: url('https://acegif.com/wp-content/uploads/gifs/fire-102.gif');
+        }
         * {
             image-rendering: pixelated;
         }
         body {
             height: 100vh;
             background-color: black;
-            /*background-image: url('https://acegif.com/wp-content/uploads/gifs/fire-102.gif');*/
+            background-image: var(--no-fire);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
             overflow: hidden;
         }
-        .goat {
-            display: none;
-            position: fixed;
-            width: 40vh;
-            bottom: 5%;
-            left: 50%;
-            margin-left: -20vh;
-        }
         .tree {
-            display: block;
+            display: var(--day-1);
             position: fixed;
             width: 25vh;
             top: 5%;
@@ -35,7 +52,21 @@
             margin-left: -12.5vh;
         }
         .banana {
-            display: none;
+            display: var(--day-2);
+            position: fixed;
+            top: 10vh;
+            height: 20vh;
+        }
+        .goat {
+            display: var(--day-5);
+            position: fixed;
+            width: 40vh;
+            bottom: 5%;
+            left: 50%;
+            margin-left: -20vh;
+        }
+        .julmust {
+            display: var(--day-6);
             position: fixed;
             top: 10vh;
             height: 20vh;
@@ -54,19 +85,13 @@
             top: 20vh;
             right: 20vw;
         }
-        .julmust {
-            display: none;
-            position: fixed;
-            top: 10vh;
-            height: 20vh;
-        }
         .julmust--left {
             left: 10vw;
-            animation: rotation-cw 2s infinite forwards;
+            animation: rotation-cw 2s infinite linear;
         }
         .julmust--right {
             right: 10vw;
-            animation: rotation-ccw 2s infinite backwards;
+            animation: rotation-ccw 2s infinite linear;
         }
         @keyframes rotation-cw {
             from {
