@@ -12,14 +12,14 @@
         body {
             height: 100vh;
             background-color: black;
-            background-image: url('https://acegif.com/wp-content/uploads/gifs/fire-102.gif');
+            /*background-image: url('https://acegif.com/wp-content/uploads/gifs/fire-102.gif');*/
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
             overflow: hidden;
         }
         .goat {
-            display: block;
+            display: none;
             position: fixed;
             width: 40vh;
             bottom: 5%;
@@ -35,7 +35,7 @@
             margin-left: -12.5vh;
         }
         .banana {
-            display: block;
+            display: none;
             position: fixed;
             top: 10vh;
             height: 20vh;
@@ -54,13 +54,35 @@
             top: 20vh;
             right: 20vw;
         }
-        .fire {
-            display: block;
+        .julmust {
+            display: none;
             position: fixed;
-            bottom: 0;
-            left: 50%;
-            width: 40vw;
-            margin-left: -20vw;
+            top: 10vh;
+            height: 20vh;
+        }
+        .julmust--left {
+            left: 10vw;
+            animation: rotation-cw 2s infinite forwards;
+        }
+        .julmust--right {
+            right: 10vw;
+            animation: rotation-ccw 2s infinite backwards;
+        }
+        @keyframes rotation-cw {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        @keyframes rotation-ccw {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-359deg);
+            }
         }
     </style>
 </head>
@@ -89,9 +111,13 @@
          class="banana banana--bottom-right"
          alt="banana"
      />
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/9987911/original_026fc0b61e323aff95685b0331d518da.gif"
-         class="fire"
-         alt="fire"
+    <img src="https://www.carlsbergsverige.se/media/26411/se_julmust-original.png"
+         class="julmust julmust--left"
+         alt="julmust"
+    />
+    <img src="https://www.carlsbergsverige.se/media/26411/se_julmust-original.png"
+         class="julmust julmust--right"
+         alt="julmust"
     />
 </body>
 </html>
